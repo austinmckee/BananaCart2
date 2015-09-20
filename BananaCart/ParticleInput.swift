@@ -40,5 +40,18 @@ class ParticleInput {
     }
     
     
+    func readAnalog() -> NSNumber {
+        let funcArgs = ["A0"]
+        myPhoton!.callFunction("analogread", withArguments: funcArgs) { (result : NSNumber!, error : NSError!) -> Void in
+            if (error == nil) {
+                print(result);
+            }
+            
+        }
+        //TODO: return result
+        return 0;
+    }
+    
+    
     
 }
