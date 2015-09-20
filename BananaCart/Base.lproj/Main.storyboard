@@ -86,6 +86,18 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="400" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jea-1G-cDQ">
+                                <rect key="frame" x="557" y="302" width="121" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="                                    " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="epN-W8-HYZ">
+                                <rect key="frame" x="122" y="225" width="446" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -95,9 +107,19 @@
                         </constraints>
                     </view>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" title="BananaStand Product" id="mOI-FS-AaM"/>
+                    <navigationItem key="navigationItem" title="BananaStand Product" id="mOI-FS-AaM">
+                        <barButtonItem key="rightBarButtonItem" title="Check Out" id="24f-BL-iSV">
+                            <connections>
+                                <segue destination="J58-fp-CVA" kind="popoverPresentation" popoverAnchorBarButtonItem="24f-BL-iSV" id="h4x-1n-Q7h">
+                                    <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                </segue>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
+                        <outlet property="CurrentWeight" destination="jea-1G-cDQ" id="vhQ-Fs-KHH"/>
                         <outlet property="FoodLabel" destination="cUE-C5-HWe" id="irC-2m-Ak9"/>
+                        <outlet property="FoodPlease" destination="epN-W8-HYZ" id="7nC-lG-iHb"/>
                         <outlet property="FoodPrice" destination="oAF-RY-wjh" id="ySZ-Zy-lXX"/>
                         <outlet property="FoodQuantity" destination="pU1-ZI-IBE" id="SN1-Cr-tMb"/>
                         <outlet property="FoodTotal" destination="XvV-Ln-PQw" id="AAz-Fb-PNk"/>
@@ -112,7 +134,6 @@
         <!--Camera View Controller-->
         <scene sceneID="8ZH-KZ-osG">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="mHX-GU-wig" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="vaM-dI-RFT" customClass="CameraViewController" customModule="BananaCart" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="FVs-sR-07L"/>
@@ -124,6 +145,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mHX-GU-wig" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="793" y="905"/>
         </scene>
@@ -179,6 +201,9 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Master" id="Zdf-7t-Un8"/>
+                    <connections>
+                        <outlet property="MasterTitle" destination="Zdf-7t-Un8" id="AFe-Oz-wvs"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rux-fX-hf1" sceneMemberID="firstResponder"/>
             </objects>
@@ -199,10 +224,41 @@
             </objects>
             <point key="canvasLocation" x="-45" y="129"/>
         </scene>
+        <!--Checkout View Controller-->
+        <scene sceneID="AwJ-L6-6iA">
+            <objects>
+                <viewController id="J58-fp-CVA" customClass="CheckoutViewController" customModule="BananaCart" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Xer-Zt-TKH"/>
+                        <viewControllerLayoutGuide type="bottom" id="ht3-DU-wpf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vkL-0C-e5F">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mOI-lL-FvX">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="webs" destination="mOI-lL-FvX" id="Kbb-Ht-FNy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KcC-WU-K0y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1596" y="-347"/>
+        </scene>
         <!--Camera View Controller-->
         <scene sceneID="arD-w8-8hg">
             <objects>
                 <viewController id="SMT-Sc-nEc" customClass="CameraViewController" customModule="BananaCart" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="DrE-xh-qES"/>
+                        <viewControllerLayoutGuide type="bottom" id="4cO-8z-agB"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="1oz-x2-Bsd">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="284"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

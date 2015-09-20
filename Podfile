@@ -2,7 +2,7 @@
 # platform :ios, '6.0'
 
 target 'BananaCart' do
-
+pod "Spark-SDK"
 end
 
 target 'BananaCartTests' do

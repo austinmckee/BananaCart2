@@ -11,6 +11,9 @@
 		156157B21BADF527003A5D1D /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156157B01BADF527003A5D1D /* CameraViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		156157B31BADF527003A5D1D /* CameraViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 156157B11BADF527003A5D1D /* CameraViewController.xib */; settings = {ASSET_TAGS = (); }; };
 		156157B51BAE1FAB003A5D1D /* FoodEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156157B41BAE1FAB003A5D1D /* FoodEntry.swift */; settings = {ASSET_TAGS = (); }; };
+		156157B71BAE9F39003A5D1D /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156157B61BAE9F39003A5D1D /* Secrets.swift */; settings = {ASSET_TAGS = (); }; };
+		156157BA1BAEC099003A5D1D /* CheckoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156157B91BAEC099003A5D1D /* CheckoutViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		156157BC1BAEC705003A5D1D /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156157BB1BAEC705003A5D1D /* Global.swift */; settings = {ASSET_TAGS = (); }; };
 		1576AEAB1BADE49600898BE5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1576AEAA1BADE49600898BE5 /* AppDelegate.swift */; };
 		1576AEAD1BADE49600898BE5 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1576AEAC1BADE49600898BE5 /* MasterViewController.swift */; };
 		1576AEAF1BADE49600898BE5 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1576AEAE1BADE49600898BE5 /* DetailViewController.swift */; };
@@ -19,6 +22,7 @@
 		1576AEB71BADE49600898BE5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1576AEB51BADE49600898BE5 /* LaunchScreen.storyboard */; };
 		1576AEC21BADE49600898BE5 /* BananaCartTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1576AEC11BADE49600898BE5 /* BananaCartTests.swift */; };
 		1576AECD1BADE49600898BE5 /* BananaCartUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1576AECC1BADE49600898BE5 /* BananaCartUITests.swift */; };
+		199B8717E01E9A72D2C567CD /* libPods-BananaCart.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F4FD736FBE25922144E79B0 /* libPods-BananaCart.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,10 +43,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0F4FD736FBE25922144E79B0 /* libPods-BananaCart.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BananaCart.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		156157AE1BADE810003A5D1D /* CameraViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController2.swift; sourceTree = "<group>"; };
 		156157B01BADF527003A5D1D /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		156157B11BADF527003A5D1D /* CameraViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CameraViewController.xib; sourceTree = "<group>"; };
 		156157B41BAE1FAB003A5D1D /* FoodEntry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodEntry.swift; sourceTree = "<group>"; };
+		156157B61BAE9F39003A5D1D /* Secrets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
+		156157B81BAEA298003A5D1D /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		156157B91BAEC099003A5D1D /* CheckoutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckoutViewController.swift; sourceTree = "<group>"; };
+		156157BB1BAEC705003A5D1D /* Global.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
 		1576AEA71BADE49600898BE5 /* BananaCart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BananaCart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1576AEAA1BADE49600898BE5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1576AEAC1BADE49600898BE5 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
@@ -57,6 +66,8 @@
 		1576AEC81BADE49600898BE5 /* BananaCartUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BananaCartUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1576AECC1BADE49600898BE5 /* BananaCartUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BananaCartUITests.swift; sourceTree = "<group>"; };
 		1576AECE1BADE49600898BE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		508C6972034E533EFC7F3023 /* Pods-BananaCart.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BananaCart.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BananaCart/Pods-BananaCart.debug.xcconfig"; sourceTree = "<group>"; };
+		8EEC704254F963584F0B6831 /* Pods-BananaCart.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BananaCart.release.xcconfig"; path = "Pods/Target Support Files/Pods-BananaCart/Pods-BananaCart.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				199B8717E01E9A72D2C567CD /* libPods-BananaCart.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +103,8 @@
 				1576AEC01BADE49600898BE5 /* BananaCartTests */,
 				1576AECB1BADE49600898BE5 /* BananaCartUITests */,
 				1576AEA81BADE49600898BE5 /* Products */,
+				DAB4EAF69995F77426B60C88 /* Pods */,
+				BF7E8F8F058C914DB74B82F1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -109,15 +123,19 @@
 			children = (
 				1576AEAA1BADE49600898BE5 /* AppDelegate.swift */,
 				1576AEAC1BADE49600898BE5 /* MasterViewController.swift */,
+				156157B81BAEA298003A5D1D /* Bridging-Header.h */,
 				156157AE1BADE810003A5D1D /* CameraViewController2.swift */,
 				156157B01BADF527003A5D1D /* CameraViewController.swift */,
 				156157B11BADF527003A5D1D /* CameraViewController.xib */,
 				1576AEAE1BADE49600898BE5 /* DetailViewController.swift */,
+				156157B91BAEC099003A5D1D /* CheckoutViewController.swift */,
 				1576AEB01BADE49600898BE5 /* Main.storyboard */,
 				1576AEB31BADE49600898BE5 /* Assets.xcassets */,
 				1576AEB51BADE49600898BE5 /* LaunchScreen.storyboard */,
 				1576AEB81BADE49600898BE5 /* Info.plist */,
 				156157B41BAE1FAB003A5D1D /* FoodEntry.swift */,
+				156157B61BAE9F39003A5D1D /* Secrets.swift */,
+				156157BB1BAEC705003A5D1D /* Global.swift */,
 			);
 			path = BananaCart;
 			sourceTree = "<group>";
@@ -140,6 +158,23 @@
 			path = BananaCartUITests;
 			sourceTree = "<group>";
 		};
+		BF7E8F8F058C914DB74B82F1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0F4FD736FBE25922144E79B0 /* libPods-BananaCart.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DAB4EAF69995F77426B60C88 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				508C6972034E533EFC7F3023 /* Pods-BananaCart.debug.xcconfig */,
+				8EEC704254F963584F0B6831 /* Pods-BananaCart.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +182,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1576AED11BADE49600898BE5 /* Build configuration list for PBXNativeTarget "BananaCart" */;
 			buildPhases = (
+				6B8234B8A23FA22D684E455A /* Check Pods Manifest.lock */,
 				1576AEA31BADE49600898BE5 /* Sources */,
 				1576AEA41BADE49600898BE5 /* Frameworks */,
 				1576AEA51BADE49600898BE5 /* Resources */,
+				2B23F7BD09AF9A0057652F67 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -267,6 +304,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2B23F7BD09AF9A0057652F67 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BananaCart/Pods-BananaCart-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6B8234B8A23FA22D684E455A /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1576AEA31BADE49600898BE5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -274,10 +344,13 @@
 			files = (
 				1576AEAF1BADE49600898BE5 /* DetailViewController.swift in Sources */,
 				156157B21BADF527003A5D1D /* CameraViewController.swift in Sources */,
+				156157B71BAE9F39003A5D1D /* Secrets.swift in Sources */,
 				156157AF1BADE810003A5D1D /* CameraViewController2.swift in Sources */,
+				156157BA1BAEC099003A5D1D /* CheckoutViewController.swift in Sources */,
 				1576AEAD1BADE49600898BE5 /* MasterViewController.swift in Sources */,
 				156157B51BAE1FAB003A5D1D /* FoodEntry.swift in Sources */,
 				1576AEAB1BADE49600898BE5 /* AppDelegate.swift in Sources */,
+				156157BC1BAEC705003A5D1D /* Global.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,23 +490,29 @@
 		};
 		1576AED21BADE49600898BE5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 508C6972034E533EFC7F3023 /* Pods-BananaCart.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = BananaCart/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.austin-mckee.BananaCart";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BananaCart/Bridging-Header.h";
+				USER_HEADER_SEARCH_PATHS = "Pods/**";
 			};
 			name = Debug;
 		};
 		1576AED31BADE49600898BE5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8EEC704254F963584F0B6831 /* Pods-BananaCart.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = BananaCart/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.austin-mckee.BananaCart";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BananaCart/Bridging-Header.h";
+				USER_HEADER_SEARCH_PATHS = "Pods/**";
 			};
 			name = Release;
 		};
