@@ -15,6 +15,8 @@
 		1576AEB71BADE49600898BE5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1576AEB51BADE49600898BE5 /* LaunchScreen.storyboard */; };
 		1576AEC21BADE49600898BE5 /* BananaCartTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1576AEC11BADE49600898BE5 /* BananaCartTests.swift */; };
 		1576AECD1BADE49600898BE5 /* BananaCartUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1576AECC1BADE49600898BE5 /* BananaCartUITests.swift */; };
+		7B9771E1509F439D52707441 /* libPods-BananaCart.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BCE23BB3ACCB7753CE1DE30F /* libPods-BananaCart.a */; };
+		D30AA7731BAE60B100C470A6 /* ParticleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30AA7721BAE60B100C470A6 /* ParticleInput.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,11 @@
 		1576AEC81BADE49600898BE5 /* BananaCartUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BananaCartUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1576AECC1BADE49600898BE5 /* BananaCartUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BananaCartUITests.swift; sourceTree = "<group>"; };
 		1576AECE1BADE49600898BE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7153B8455222A3EE7A652DF1 /* Pods-BananaCart.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BananaCart.release.xcconfig"; path = "Pods/Target Support Files/Pods-BananaCart/Pods-BananaCart.release.xcconfig"; sourceTree = "<group>"; };
+		BCE23BB3ACCB7753CE1DE30F /* libPods-BananaCart.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BananaCart.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D30AA7721BAE60B100C470A6 /* ParticleInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParticleInput.swift; sourceTree = "<group>"; };
+		D30AA7741BAE65AE00C470A6 /* BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgingHeader.h; sourceTree = "<group>"; };
+		F9CC64934224D00D3882156C /* Pods-BananaCart.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BananaCart.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BananaCart/Pods-BananaCart.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B9771E1509F439D52707441 /* libPods-BananaCart.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +84,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		00CE370F25FA7DE40DC7E5EB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BCE23BB3ACCB7753CE1DE30F /* libPods-BananaCart.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		1576AE9E1BADE49600898BE5 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +99,8 @@
 				1576AEC01BADE49600898BE5 /* BananaCartTests */,
 				1576AECB1BADE49600898BE5 /* BananaCartUITests */,
 				1576AEA81BADE49600898BE5 /* Products */,
+				FA4CE586FA28568898303F3B /* Pods */,
+				00CE370F25FA7DE40DC7E5EB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -106,6 +124,8 @@
 				1576AEB31BADE49600898BE5 /* Assets.xcassets */,
 				1576AEB51BADE49600898BE5 /* LaunchScreen.storyboard */,
 				1576AEB81BADE49600898BE5 /* Info.plist */,
+				D30AA7721BAE60B100C470A6 /* ParticleInput.swift */,
+				D30AA7741BAE65AE00C470A6 /* BridgingHeader.h */,
 			);
 			path = BananaCart;
 			sourceTree = "<group>";
@@ -128,6 +148,15 @@
 			path = BananaCartUITests;
 			sourceTree = "<group>";
 		};
+		FA4CE586FA28568898303F3B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F9CC64934224D00D3882156C /* Pods-BananaCart.debug.xcconfig */,
+				7153B8455222A3EE7A652DF1 /* Pods-BananaCart.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +164,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1576AED11BADE49600898BE5 /* Build configuration list for PBXNativeTarget "BananaCart" */;
 			buildPhases = (
+				687B8FB80EB836448923554C /* Check Pods Manifest.lock */,
 				1576AEA31BADE49600898BE5 /* Sources */,
 				1576AEA41BADE49600898BE5 /* Frameworks */,
 				1576AEA51BADE49600898BE5 /* Resources */,
+				9CD38E88DE561777E07BAE4B /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -253,6 +284,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		687B8FB80EB836448923554C /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9CD38E88DE561777E07BAE4B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BananaCart/Pods-BananaCart-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1576AEA31BADE49600898BE5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -260,6 +324,7 @@
 			files = (
 				1576AEAF1BADE49600898BE5 /* DetailViewController.swift in Sources */,
 				1576AEAD1BADE49600898BE5 /* MasterViewController.swift in Sources */,
+				D30AA7731BAE60B100C470A6 /* ParticleInput.swift in Sources */,
 				1576AEAB1BADE49600898BE5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -400,23 +465,29 @@
 		};
 		1576AED21BADE49600898BE5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F9CC64934224D00D3882156C /* Pods-BananaCart.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = BananaCart/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.austin-mckee.BananaCart";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = BananaCart/BridgingHeader.h;
+				USER_HEADER_SEARCH_PATHS = "Pods/**";
 			};
 			name = Debug;
 		};
 		1576AED31BADE49600898BE5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7153B8455222A3EE7A652DF1 /* Pods-BananaCart.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = BananaCart/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.austin-mckee.BananaCart";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = BananaCart/BridgingHeader.h;
+				USER_HEADER_SEARCH_PATHS = "Pods/**";
 			};
 			name = Release;
 		};
@@ -487,6 +558,7 @@
 				1576AED31BADE49600898BE5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1576AED41BADE49600898BE5 /* Build configuration list for PBXNativeTarget "BananaCartTests" */ = {
 			isa = XCConfigurationList;
@@ -495,6 +567,7 @@
 				1576AED61BADE49600898BE5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1576AED71BADE49600898BE5 /* Build configuration list for PBXNativeTarget "BananaCartUITests" */ = {
 			isa = XCConfigurationList;
@@ -503,6 +576,7 @@
 				1576AED91BADE49600898BE5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
