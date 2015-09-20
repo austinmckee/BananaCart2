@@ -15,13 +15,15 @@ void setup() {
     pinMode(forceSensor1, INPUT);
     pinMode(forceSensor2, INPUT);
     pinMode(forceSensor3, INPUT);
+
+    Spark.variable("sumForces", &sumForces, INT);
 }
 
 void loop() {
     Serial.print("Sensor 0: ");
     force0 = analogRead(forceSensor0);
     Serial.print(force0);
-    
+
     Serial.print(" Sensor 1: ");
     force1 = analogRead(forceSensor1);
     Serial.print(force1);
@@ -29,14 +31,14 @@ void loop() {
     Serial.print(" Sensor 2: ");
     force2 = analogRead(forceSensor2);
     Serial.print(force2);
-    
+
     Serial.print(" Sensor 3: ");
     force3 = analogRead(forceSensor3);
     Serial.print(force3);
-    
+
     Serial.print(" Sum: ");
     sumForces = force0 + force1 + force2 + force3;
     Serial.println(sumForces);
-    
+
     delay(40);
 }
