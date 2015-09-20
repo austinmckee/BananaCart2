@@ -1,0 +1,12 @@
+#payment-frame{
+	width: 280px;
+	height: 280px;
+}
+.buttonWrapper{
+	width: 100%;
+	margin-top: 15px;
+	text-align: center;
+}
+.background{
+	background-color: rgb(253, 216, 49);
+}
