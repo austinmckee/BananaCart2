@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		156157AF1BADE810003A5D1D /* CameraViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156157AE1BADE810003A5D1D /* CameraViewController2.swift */; settings = {ASSET_TAGS = (); }; };
+		156157B21BADF527003A5D1D /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156157B01BADF527003A5D1D /* CameraViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		156157B31BADF527003A5D1D /* CameraViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 156157B11BADF527003A5D1D /* CameraViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		156157B51BAE1FAB003A5D1D /* FoodEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156157B41BAE1FAB003A5D1D /* FoodEntry.swift */; settings = {ASSET_TAGS = (); }; };
 		1576AEAB1BADE49600898BE5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1576AEAA1BADE49600898BE5 /* AppDelegate.swift */; };
 		1576AEAD1BADE49600898BE5 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1576AEAC1BADE49600898BE5 /* MasterViewController.swift */; };
 		1576AEAF1BADE49600898BE5 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1576AEAE1BADE49600898BE5 /* DetailViewController.swift */; };
@@ -35,6 +39,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		156157AE1BADE810003A5D1D /* CameraViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController2.swift; sourceTree = "<group>"; };
+		156157B01BADF527003A5D1D /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		156157B11BADF527003A5D1D /* CameraViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CameraViewController.xib; sourceTree = "<group>"; };
+		156157B41BAE1FAB003A5D1D /* FoodEntry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodEntry.swift; sourceTree = "<group>"; };
 		1576AEA71BADE49600898BE5 /* BananaCart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BananaCart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1576AEAA1BADE49600898BE5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1576AEAC1BADE49600898BE5 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
@@ -101,11 +109,15 @@
 			children = (
 				1576AEAA1BADE49600898BE5 /* AppDelegate.swift */,
 				1576AEAC1BADE49600898BE5 /* MasterViewController.swift */,
+				156157AE1BADE810003A5D1D /* CameraViewController2.swift */,
+				156157B01BADF527003A5D1D /* CameraViewController.swift */,
+				156157B11BADF527003A5D1D /* CameraViewController.xib */,
 				1576AEAE1BADE49600898BE5 /* DetailViewController.swift */,
 				1576AEB01BADE49600898BE5 /* Main.storyboard */,
 				1576AEB31BADE49600898BE5 /* Assets.xcassets */,
 				1576AEB51BADE49600898BE5 /* LaunchScreen.storyboard */,
 				1576AEB81BADE49600898BE5 /* Info.plist */,
+				156157B41BAE1FAB003A5D1D /* FoodEntry.swift */,
 			);
 			path = BananaCart;
 			sourceTree = "<group>";
@@ -190,6 +202,7 @@
 		1576AE9F1BADE49600898BE5 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftMigration = 0700;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Austin McKee";
 				TargetAttributes = {
@@ -232,6 +245,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1576AEB71BADE49600898BE5 /* LaunchScreen.storyboard in Resources */,
+				156157B31BADF527003A5D1D /* CameraViewController.xib in Resources */,
 				1576AEB41BADE49600898BE5 /* Assets.xcassets in Resources */,
 				1576AEB21BADE49600898BE5 /* Main.storyboard in Resources */,
 			);
@@ -259,7 +273,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				1576AEAF1BADE49600898BE5 /* DetailViewController.swift in Sources */,
+				156157B21BADF527003A5D1D /* CameraViewController.swift in Sources */,
+				156157AF1BADE810003A5D1D /* CameraViewController2.swift in Sources */,
 				1576AEAD1BADE49600898BE5 /* MasterViewController.swift in Sources */,
+				156157B51BAE1FAB003A5D1D /* FoodEntry.swift in Sources */,
 				1576AEAB1BADE49600898BE5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -487,6 +504,7 @@
 				1576AED31BADE49600898BE5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1576AED41BADE49600898BE5 /* Build configuration list for PBXNativeTarget "BananaCartTests" */ = {
 			isa = XCConfigurationList;
@@ -495,6 +513,7 @@
 				1576AED61BADE49600898BE5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1576AED71BADE49600898BE5 /* Build configuration list for PBXNativeTarget "BananaCartUITests" */ = {
 			isa = XCConfigurationList;
@@ -503,6 +522,7 @@
 				1576AED91BADE49600898BE5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
