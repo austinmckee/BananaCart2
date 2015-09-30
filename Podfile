@@ -2,7 +2,11 @@
 # platform :ios, '6.0'
 
 target 'BananaCart' do
+<<<<<<< HEAD
   pod "Spark-SDK"
+=======
+pod "Spark-SDK"
+>>>>>>> austin
 end
 
 target 'BananaCartTests' do
